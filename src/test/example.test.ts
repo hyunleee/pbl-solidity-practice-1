@@ -38,7 +38,7 @@ describe("포켓몬 컨트랙트 테스트", () => {
     await network.provider.send("evm_revert", [initialSnapshotId]);
   });
 
-  describe
+  describe;
 
   it("포켓몬이 정상적으로 생성되는가?", async () => {
     const pokemonInfo = mockPokemonInfo({ owner: users[0].address, exp: BigNumber.from(0), rarity: Rarity.COMMON });
@@ -54,11 +54,11 @@ describe("포켓몬 컨트랙트 테스트", () => {
 
   it("포켓폰에게 먹이가 정상적으로 주어지는가?", async () => {
     await pokemon.connect(users[0]).birth("test");
-    await pokemon.connect(users[0]).feed()
+    await pokemon.connect(users[0]).feed();
 
-    const result = await pokemon.pokemonDatas(users[0].address); 
-    expect(result.rarity).to.equal(Rarity.RARE); 
-    expect(result.exp).to.equal(BigNumber.from(50)); 
-    
+    const result = await pokemon.pokemonDatas(users[0].address);
+
+    expect(result.rarity).to.equal(Rarity.RARE);
+    expect(result.exp).to.equal(BigNumber.from(50));
   });
 });

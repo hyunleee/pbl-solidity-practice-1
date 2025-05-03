@@ -71,7 +71,6 @@
     "hardhat-gas-reporter": "1.0.9",
     "hardhat-log-remover": "2.0.2",
     "hardhat-storage-layout": "^0.1.7",
-    "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",

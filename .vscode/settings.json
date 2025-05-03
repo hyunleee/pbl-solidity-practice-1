@@ -7,7 +7,7 @@
     "cache": true,
     "coverage": true,
     "typechain-types": true,
-    ".husky": true,
+    ".husky": false,
     ".lintstagedrc": true,
     ".prettierignore": true,
     ".prettierrc": true,
